@@ -5,6 +5,8 @@ import rateLimit from "express-rate-limit";
 import jwt from "jsonwebtoken";
 
 const app = express();
+app.set("trust proxy", 1);
+
 const PORT = process.env.PORT || 3000;
 
 const {
